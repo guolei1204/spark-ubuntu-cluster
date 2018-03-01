@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
 	(r.first).downto(r.last).each do |i|
 		config.vm.define "node-#{i}" do |node|
 			#node.vm.box = "hashicorp/precise64"
-			node.vm.box = "box/precise64.box"
+			node.vm.box = "ubuntu/precise64.box"
 			node.vm.provider "virtualbox" do |v|
 				v.name = "spark-node#{i}"
 				v.customize ["modifyvm", :id, "--cpuexecutioncap", cpuCap]
