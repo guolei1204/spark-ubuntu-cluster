@@ -6,7 +6,7 @@ SPARK_LNK="https://mirror.tuna.tsinghua.edu.cn/apache/spark/spark-2.3.0/spark-2.
 SPARK_ARCH="$(echo "$SPARK_LNK" | rev | cut -d/ -f1 | rev)"
 SPARK=${SPARK_ARCH/.tgz/""}
 
-SBT_LNK="https://github.com/sbt/sbt/releases/download/v1.0.1/sbt-1.0.1.tgz"
+SBT_LNK="https://github.com/sbt/sbt/releases/download/v1.0.1/sbt-1.1.0.tgz"
 SBT_ARCH="$(echo "$SBT_LNK" | rev | cut -d/ -f1 | rev)"
 SBT=${SBT_ARCH/.tgz/""}
 
